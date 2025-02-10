@@ -1,6 +1,7 @@
 <h1> Welcome To TESTPROJECT_1</h1>
 <h3> Enter you name </h3>
-<form method="" action="home">
+<form method="POST" action="home">
+    {% csrf_token %}
     <textarea name="name"></textarea>
     <input type="submit"></input>
 </form>

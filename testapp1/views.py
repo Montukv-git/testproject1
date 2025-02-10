@@ -6,6 +6,6 @@ def index(request):
 
 def home(request):
     data = {
-        'name': request.GET['name']
+        'name': request.POST['name']
     }
     return render(request, 'home.html', data)
